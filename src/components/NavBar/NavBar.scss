@@ -1,0 +1,73 @@
+@mixin flexCentre {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  @include flexCentre;
+  width: 1440px;
+  max-width: 90%;
+  margin: auto;
+  height: 70px;
+  text-align: center;
+  padding: 2%;
+
+  @media (max-width: 769px) {
+    height: 60px;
+    padding: 3%;
+  }
+
+  @media (max-width: 500px) {
+    height: 45px;
+    padding: 4%;
+  }
+
+  @media (max-width: 400px) {
+    height: 35px;
+  }
+
+  img {
+    height: 100%;
+  }
+
+  nav {
+    @include flexCentre;
+    height: 100%;
+    width: 300px;
+    margin-left: auto;
+    font-size: 24px;
+
+    @media (max-width: 769px) {
+      width: 250px;
+      font-size: 21px;
+    }
+
+    @media (max-width: 500px) {
+      width: 225px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 400px) {
+      width: 200px;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  }
+
+  ul {
+    @include flexCentre;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .navLink {
+    font-family: $montserrat;
+    color: $mainColor;
+    justify-content: space-between;
+    width: 50%;
+    text-decoration: none;
+  }
+}

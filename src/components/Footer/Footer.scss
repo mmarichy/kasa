@@ -1,0 +1,39 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_logo {
+      width: 125px;
+      height: 40px;
+      filter: brightness(100);
+      @media (max-width: 769px) {
+        width: 113px;
+      }
+
+      @media (max-width: 400px) {
+        width: 100px;
+      }
+    }
+  }
+  p {
+    color: white;
+    font-size: 24px;
+    @media (max-width: 769px) {
+      font-size: 18px;
+    }
+    @media (max-width: 450px) {
+      font-size: 12px;
+    }
+  }
+}

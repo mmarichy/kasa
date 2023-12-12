@@ -8,10 +8,14 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <NavLink to="/">Accueil</NavLink>
+            <NavLink to="/" className="navLink">
+              Accueil
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/about">A Propos</NavLink>
+            <NavLink to="/about" className="navLink">
+              À Propos
+            </NavLink>
           </li>
         </ul>
       </nav>
