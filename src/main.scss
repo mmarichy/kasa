@@ -1,9 +1,13 @@
 @import './assets/variables.scss';
 
+//Components
 @import './components/NavBar/NavBar.scss';
 @import './components/Footer/Footer.scss';
 @import './components/Banner/Banner.scss';
+@import './components/Gallery/Gallery.scss';
+@import './components/Card/Card.scss';
 
+//Base
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

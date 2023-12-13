@@ -1,0 +1,21 @@
+.galleryCard {
+  max-width: 1240px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 60px;
+  margin: auto;
+  border-radius: 25px;
+  padding: 50px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+
+  @media (max-width: 769px) {
+    padding: 20px;
+    background-color: white;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 0;
+  }
+}
