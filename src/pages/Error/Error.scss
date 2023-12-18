@@ -1,0 +1,33 @@
+.bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_404 {
+    margin: auto;
+    color: $mainColor;
+    font-family: $montserrat;
+    font-size: 200px;
+    font-weight: 700;
+  }
+
+  &_Text {
+    color: $mainColor;
+    font-family: $montserrat;
+    font-size: 33px;
+    font-weight: 500;
+  }
+}
+
+.linkHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px;
+  color: $mainColor;
+  font-family: $montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
