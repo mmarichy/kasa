@@ -8,7 +8,12 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <NavLink to="/" className="navLink">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                [isActive ? 'navLink active' : 'navLink'].join(' ')
+              }
+            >
               Accueil
             </NavLink>
           </li>
