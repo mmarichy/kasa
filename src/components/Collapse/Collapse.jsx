@@ -2,28 +2,25 @@ import { useState } from 'react'
 import Arrow from '../../assets/arrow.svg'
 
 function Collapse(data) {
-  const [isCollapse, setIsCollapse] = useState(true)
-  function toggleCollapse() {
-    setIsCollapse(!isCollapse)
-    console.log(isCollapse)
+  const [isCollapsed, setIsCollapsed] = useState(true)
+  function toggleCollapsed() {
+    setIsCollapsed(!isCollapsed)
   }
 
   return (
-    <div onClick={toggleCollapse}>
+    <div onClick={toggleCollapsed} className="collapse">
       <div className="infoCollapse">
-        <h2>{data.title}</h2>
+        <h3>{data.title}</h3>
         <img
-          className={isCollapse ? 'arrow' : 'arrow rotated'}
           src={Arrow}
-          alt={isCollapse ? 'Flèche vers le bas' : 'Flèche vers le haut'}
+          className={isCollapsed ? 'arrow ' : 'arrow arrow_rotated'}
+          alt="flèches"
         />
       </div>
 
-      {!isCollapse && (
-        <div>
-          {data.text.map((item, id) => (
-            <p key={id}>{item.text}</p>
-          ))}
+      {!isCollapsed && (
+        <div className="animated">
+          <p>{data.description}</p>
         </div>
       )}
     </div>

@@ -1,20 +1,20 @@
-import Banner from '../../components/Banner/Banner'
+import * as React from 'react'
 import BannerImg from '../../assets/about_banner.png'
-import './About.scss'
+import Banner from '../../components/Banner/Banner'
+import about from '../../about.json'
 import Collapse from '../../components/Collapse/Collapse'
-import aboutData from '../../about.json'
 
-function About() {
+export default function About() {
   return (
     <div>
       <div>
-        <Banner src={BannerImg} alt="Photo de montagne" />
-        {aboutData.map((about, id) => (
-          <Collapse key={id} title={about.title} text={about.text} />
-        ))}
+        <Banner src={BannerImg} alt="Photo de paysage de montagnes" />
       </div>
+      {about.map((data, index) => (
+        <div className="collapseList" key={index}>
+          <Collapse title={data.title} description={data.description} />
+        </div>
+      ))}
     </div>
   )
 }
-
-export default About
