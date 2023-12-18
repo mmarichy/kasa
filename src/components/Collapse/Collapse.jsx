@@ -18,11 +18,9 @@ function Collapse(data) {
         />
       </div>
 
-      {!isCollapsed && (
-        <div className="animated">
-          <p>{data.description}</p>
-        </div>
-      )}
+      <div className={isCollapsed ? 'hidden' : 'displayed'}>
+        <p>{data.description}</p>
+      </div>
     </div>
   )
 }
