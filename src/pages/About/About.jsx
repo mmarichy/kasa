@@ -1,9 +1,18 @@
+import Banner from '../../components/Banner/Banner'
+import BannerImg from '../../assets/about_banner.png'
 import './About.scss'
+import Collapse from '../../components/Collapse/Collapse'
+import aboutData from '../../about.json'
 
 function About() {
   return (
     <div>
-      <h1 className="titre11">A-propos de nous 👩‍💻👨‍💻👩‍💻</h1>
+      <div>
+        <Banner src={BannerImg} alt="Photo de montagne" />
+        {aboutData.map((about, id) => (
+          <Collapse key={id} title={about.title} text={about.text} />
+        ))}
+      </div>
     </div>
   )
 }
