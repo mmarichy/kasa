@@ -1,0 +1,69 @@
+.carrouselBox {
+  position: relative;
+  max-width: 100%;
+  width: 1240px;
+  height: 415px;
+  margin: auto;
+  border-radius: 25px;
+  margin-bottom: 30px;
+
+  @media (max-width: 920px) {
+    width: 798px;
+    height: 335px;
+  }
+
+  @media (max-width: 400px) {
+    width: 335px;
+    height: 255px;
+  }
+
+  .slides {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  .compteur {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+
+    @media (max-width: 400px) {
+      display: none;
+    }
+  }
+
+  img[alt='Arrow'] {
+    position: absolute;
+    border: none;
+    width: 70px;
+    height: 100px;
+    cursor: pointer;
+
+    @media (max-width: 920px) {
+      width: 48;
+      height: 68px;
+    }
+    @media (max-width: 600px) {
+      width: 35px;
+      height: 45px;
+    }
+
+    &.prev {
+      rotate: 90deg;
+      top: 40%;
+      left: 1%;
+    }
+
+    &.next {
+      rotate: -90deg;
+      top: 40%;
+      right: 1%;
+    }
+  }
+}
