@@ -1,0 +1,12 @@
+.tag {
+  background-color: $mainColor;
+  padding: 3px 30px 3px 30px;
+  color: white;
+  font-family: $montserrat;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 12px;
+  @media screen and (max-width: 980px) {
+    padding: 3px 15px 3px 15px;
+  }
+}

@@ -7,9 +7,11 @@
 @import './components/Gallery/Gallery.scss';
 @import './components/Card/Card.scss';
 @import './components/Collapse/Collapse.scss';
-@import './components/Logement/Carrousel/Carrousel.scss';
+
+//components page Logements
 
 //Pages
+@import './pages/Logement/Logement.scss';
 @import './pages/About/About.scss';
 @import './pages/Error/Error.scss';
 

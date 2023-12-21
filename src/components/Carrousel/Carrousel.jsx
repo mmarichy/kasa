@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import Arrow from '../../../assets/arrow.svg'
+import Arrow from '../../assets/arrow.svg'
 
-function Carrousel({ dataLog }) {
+function Carrousel({ Log }) {
   const [slider, updateSlider] = useState(0)
-  const pictures = dataLog.pictures
+  const pictures = Log.pictures
   const prevNext = (slider, change) => {
     if (change === 'prev') {
       slider === 0

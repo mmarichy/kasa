@@ -1,6 +1,7 @@
 import { Navigate, useParams } from 'react-router-dom'
 import data from '../../datas.json'
-import Carrousel from '../../components/Logement/Carrousel/Carrousel'
+import Carrousel from '../../components/Carrousel/Carrousel'
+import InfosLog from '../../components/Logement/InfosLog/InfosLog'
 
 export default function Logement() {
   const { id } = useParams()
@@ -9,7 +10,8 @@ export default function Logement() {
     return (
       <div>
         <div>
-          <Carrousel dataLog={idLog} />
+          <Carrousel Log={idLog} />
+          <InfosLog Log={idLog} />
         </div>
       </div>
     )

@@ -1,0 +1,25 @@
+.host {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  gap: 10px;
+  img {
+    border-radius: 35px;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    @media (max-width: 500px) {
+      width: 55px;
+      height: 55px;
+    }
+  }
+  p {
+    font-family: $montserrat;
+    color: $mainColor;
+    font-size: 18px;
+    text-align: right;
+    @media (max-width: 500px) {
+      font-size: 14px;
+    }
+  }
+}
