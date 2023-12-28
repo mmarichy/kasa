@@ -37,32 +37,35 @@
   .arrow {
     height: 30px;
     rotate: 180deg;
-    transition: 0.5s transform ease;
+    transition: 1s transform ease;
 
     &_rotated {
       transform: rotate(-180deg);
     }
   }
 }
-
-.hidden {
-  height: 0px;
+.test {
   overflow: hidden;
+  max-height: 450px;
+}
+.hidden {
+  max-height: 0px;
+  transition: max-height 1s ease;
 }
 
 .displayed {
-  height: auto;
-  animation: myAnim 0.5s ease 0s 1 normal backwards;
+  display: block;
+  transition: max-height 2s ease;
 }
 
-@keyframes myAnim {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
+// @keyframes myAnim {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(-50px);
+//   }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
