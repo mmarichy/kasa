@@ -18,7 +18,7 @@ function Collapse(data) {
         />
       </div>
 
-      <div className={`test ${isCollapsed ? 'hidden' : 'displayed'}`}>
+      <div className={`textCollapse ${isCollapsed ? 'hidden' : 'displayed'}`}>
         <p>{data.description}</p>
       </div>
     </div>
