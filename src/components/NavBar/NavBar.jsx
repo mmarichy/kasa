@@ -9,7 +9,7 @@ function Header() {
         <ul>
           <li>
             <NavLink
-              to="/"
+              to="/kasa"
               className={({ isActive }) =>
                 [isActive ? 'navLink active' : 'navLink'].join(' ')
               }

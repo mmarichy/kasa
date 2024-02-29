@@ -10,7 +10,7 @@ function Error() {
         </p>
       </div>
       <div>
-        <Link to="/" className="linkHome">
+        <Link to="/kasa" className="linkHome">
           Retourner sur la page d'accueil
         </Link>
       </div>
