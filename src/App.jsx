@@ -19,7 +19,7 @@ function App() {
         <div>
           <NavBar />
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/kasa" element={<Home />} />
             <Route path="/About" element={<About />} />
             <Route path="/Logement/:id" element={<Logement />} />
             <Route path="*" element={<Navigate to="/404" />} />
